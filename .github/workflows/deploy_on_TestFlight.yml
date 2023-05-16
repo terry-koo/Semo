@@ -71,6 +71,13 @@ jobs:
               UUID=`/usr/libexec/PlistBuddy -c 'Print :UUID' /dev/stdin <<< $(security cms -D -i ./$PROVISION)`
             cp "./$PROVISION" "$HOME/Library/MobileDevice/Provisioning Profiles/$UUID.mobileprovision"
           done
+          
+      - name: Print project directory and files
+        run: |
+          echo "Project directory: $(pwd)"
+          echo "Files in project directory:"
+          ls -al
+
       - name: Archive app
         # 빌드 및 아카이브
         run: |
