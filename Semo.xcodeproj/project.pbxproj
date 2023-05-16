@@ -16,7 +16,6 @@
 		39551AFD28EAF3C900FC5EF7 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39551AFC28EAF3C900FC5EF7 /* OnBoardingView.swift */; };
 		395E629B289C67F900E374B7 /* SingingListToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395E629A289C67F900E374B7 /* SingingListToggleView.swift */; };
 		3992665428A1BC14001849E6 /* SingingListSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3992665328A1BC14001849E6 /* SingingListSheetView.swift */; };
-		3992665628A1BD4D001849E6 /* TestDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3992665528A1BD4D001849E6 /* TestDetailView.swift */; };
 		39AA7EBF28F76A0A004065B7 /* Song+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA7EBB28F76A0A004065B7 /* Song+CoreDataClass.swift */; };
 		39AA7EC028F76A0A004065B7 /* Song+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA7EBC28F76A0A004065B7 /* Song+CoreDataProperties.swift */; };
 		39AA7EC128F76A0A004065B7 /* SingingList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA7EBD28F76A0A004065B7 /* SingingList+CoreDataClass.swift */; };
@@ -69,7 +68,6 @@
 		39551AFF28EC59D400FC5EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		395E629A289C67F900E374B7 /* SingingListToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingListToggleView.swift; sourceTree = "<group>"; };
 		3992665328A1BC14001849E6 /* SingingListSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingListSheetView.swift; sourceTree = "<group>"; };
-		3992665528A1BD4D001849E6 /* TestDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDetailView.swift; sourceTree = "<group>"; };
 		39AA7EBB28F76A0A004065B7 /* Song+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		39AA7EBC28F76A0A004065B7 /* Song+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		39AA7EBD28F76A0A004065B7 /* SingingList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SingingList+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
@@ -164,14 +162,6 @@
 			path = SingingListSheet;
 			sourceTree = "<group>";
 		};
-		3928C59E28A18916006D3D19 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				3992665528A1BD4D001849E6 /* TestDetailView.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 		39551AFE28EAF3E300FC5EF7 /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				39AA7E9128F4177A004065B7 /* NSManagedObject */,
-				3928C59E28A18916006D3D19 /* Test */,
 				EEAD176428828B46009388DD /* Semo */,
 				EEAD176328828B46009388DD /* Products */,
 				E737A7F306AB7D6519D0F6BA /* Pods */,
@@ -466,7 +455,6 @@
 				EEAD17842882E4CD009388DD /* SingingListCellView.swift in Sources */,
 				B22FFAA628EC600400A49255 /* UIScreenViewExtension.swift in Sources */,
 				EEDF24BB28ED5522005923EC /* DeleteFromSongToSingingListView.swift in Sources */,
-				3992665628A1BD4D001849E6 /* TestDetailView.swift in Sources */,
 				EEAD177D2882BE63009388DD /* ColorExtension.swift in Sources */,
 				B262DD0D2883F86F00E1B527 /* SongDetailView.swift in Sources */,
 				EE6E6DE228A2738B004F030C /* SingingListModalView.swift in Sources */,
