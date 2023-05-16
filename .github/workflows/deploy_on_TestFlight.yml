@@ -74,7 +74,7 @@ jobs:
       - name: Archive app
         # 빌드 및 아카이브
         run: |
-          cd Semo
+          cd /Semo
           pod install --repo-update --clean-install
           xcodebuild clean archive -workspace $XC_WORKSPACE -scheme $XC_SCHEME -configuration release -archivePath $XC_ARCHIVE
       - name: Export app
