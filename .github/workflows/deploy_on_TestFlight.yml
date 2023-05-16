@@ -14,7 +14,7 @@ jobs:
     runs-on: macos-latest
     env:
       # app archive 및 export 에 쓰일 환경 변수 설정
-      XC_WORKSPACE: ${{ 'Semo.xcworkspace' }}
+      XC_WORKSPACE: ${{ '/Users/runner/work/Semo/Semo/Semo.xcworkspace' }}
       XC_SCHEME: ${{ 'Semo' }}
       XC_ARCHIVE: ${{ 'Semo.xcarchive' }}
       
