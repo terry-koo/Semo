@@ -91,7 +91,6 @@ jobs:
           echo "Files in project directory:"
           ls -al
 
-
       - name: Export app
         # export 를 통해 ipa 파일 만듦
         run: |
