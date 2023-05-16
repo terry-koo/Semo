@@ -14,7 +14,7 @@ jobs:
     runs-on: macos-latest
     env:
       # app archive 및 export 에 쓰일 환경 변수 설정
-      XC_WORKSPACE: ${{ 'Semo-Action/Semo.xcworkspace' }}
+      XC_WORKSPACE: ${{ 'Semo/Semo.xcworkspace' }}
       XC_SCHEME: ${{ 'Semo' }}
       XC_ARCHIVE: ${{ 'Semo.xcarchive' }}
       
@@ -74,7 +74,7 @@ jobs:
       - name: Archive app
         # 빌드 및 아카이브
         run: |
-          cd /Semo-Action
+          cd /Semo
           pod install --repo-update --clean-install
           xcodebuild clean archive -workspace $XC_WORKSPACE -scheme $XC_SCHEME -configuration release -archivePath $XC_ARCHIVE
       - name: Export app
