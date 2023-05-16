@@ -6,6 +6,7 @@ on:
   push:
     branches: [ testFlight/* ]
     
+    
 # workflow의 실행은 하나 이상의 job으로 구성 됨
 jobs:
   # 이 workflow 는 "deploy" 라는 single job 으로 구성
