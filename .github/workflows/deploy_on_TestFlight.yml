@@ -6,6 +6,7 @@ on:
   push:
     branches: [ testFlight/* ]
     
+    
 # workflow의 실행은 하나 이상의 job으로 구성 됨
 jobs:
   # 이 workflow 는 "deploy" 라는 single job 으로 구성
@@ -14,7 +15,7 @@ jobs:
     runs-on: macos-latest
     env:
       # app archive 및 export 에 쓰일 환경 변수 설정
-      XC_WORKSPACE: ${{ 'Semo-Action/Semo.xcworkspace' }}
+      XC_WORKSPACE: ${{ '/Users/runner/work/Semo/Semo/Semo.xcworkspace' }}
       XC_SCHEME: ${{ 'Semo' }}
       XC_ARCHIVE: ${{ 'Semo.xcarchive' }}
       
@@ -71,11 +72,25 @@ jobs:
               UUID=`/usr/libexec/PlistBuddy -c 'Print :UUID' /dev/stdin <<< $(security cms -D -i ./$PROVISION)`
             cp "./$PROVISION" "$HOME/Library/MobileDevice/Provisioning Profiles/$UUID.mobileprovision"
           done
+          
+      - name: Print project directory and files
+        run: |
+          echo "Project directory: $(pwd)"
+          echo "Files in project directory:"
+          ls -al
+
       - name: Archive app
         # 빌드 및 아카이브
         run: |
-          pod install --repo-update --clean-install --project-directory=/Semo/Podfile
+          pod install --repo-update --clean-install --project-directory=/Users/runner/work/Semo/Semo/
           xcodebuild clean archive -workspace $XC_WORKSPACE -scheme $XC_SCHEME -configuration release -archivePath $XC_ARCHIVE
+          
+      - name: Print project directory and files
+        run: |
+          echo "Project directory: $(pwd)"
+          echo "Files in project directory:"
+          ls -al
+
       - name: Export app
         # export 를 통해 ipa 파일 만듦
         run: |

@@ -14,7 +14,7 @@
 		<string>Semo GithubActions</string>
 	</dict>
 	<key>signingCertificate</key>
-	<string>Apple Distribution</string>
+	<string>374AC5B5A94EC09B0F2B0A52A07BC769B9046B12</string>
 	<key>signingStyle</key>
 	<string>manual</string>
 	<key>stripSwiftSymbols</key>
