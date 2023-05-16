@@ -7,7 +7,6 @@
 
 import Foundation
 import CoreData
- 
 
 class CoreDataInitManager {
     // 싱글턴
