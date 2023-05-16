@@ -18,15 +18,15 @@ jobs:
       XC_SCHEME: ${{ 'Semo' }}
       XC_ARCHIVE: ${{ 'Semo.xcarchive' }}
       
-      # provisioning
-      ENCRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/Semo_GithubActions.mobileprovision.gpg' }}
-      DECRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/Semo_GithubActions.mobileprovision' }}
-      PROVISIONING_ENCRYPTION_KEY: ${{ secrets.PROVISION_ENCRYPTION_PWD }} # gpg로 파일 암호화할 때 사용한 암호
-      
        # certificate 
       ENCRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/Certificates.p12.gpg' }}
       DECRYPTED_CERT_FILE_PATH: ${{ '.github/secrets/Certificates.p12' }}
       CERT_ENCRYPTION_KEY: ${{ secrets.CERTS_ENCRYPTION_PWD }} # gpg로 파일 암호화할 때 사용한 암호
+      
+      # provisioning
+      ENCRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/Semo_GithubActions.mobileprovision.gpg' }}
+      DECRYPTED_PROVISION_FILE_PATH: ${{ '.github/secrets/Semo_GithubActions.mobileprovision' }}
+      PROVISIONING_ENCRYPTION_KEY: ${{ secrets.PROVISION_ENCRYPTION_PWD }} # gpg로 파일 암호화할 때 사용한 암호
       
       # certification export key
       CERT_EXPORT_KEY: ${{ secrets.CERT_EXPORT_PWD }}
