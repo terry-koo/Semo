@@ -81,7 +81,7 @@ jobs:
       - name: Archive app
         # 빌드 및 아카이브
         run: |
-          pod install --repo-update --clean-install --project-directory=Semo/
+          pod install --repo-update --clean-install --project-directory=/Users/runner/work/Semo/Semo/
           xcodebuild clean archive -workspace $XC_WORKSPACE -scheme $XC_SCHEME -configuration release -archivePath $XC_ARCHIVE
           
       - name: Print project directory and files
